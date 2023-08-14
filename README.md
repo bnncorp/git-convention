@@ -11,7 +11,8 @@
 |<a id="commit-type" href="#commit-type">유형</a>|<a id="commit-shortening" href="#commit-shortening">커밋 약어</a>|설명|작성대상|
 |---|-------|---|------|
 |UI|ui|디자인 완료|디자이너|
-|Style|style|간단한 퍼블리싱 수정|개발자, 디자이너|
+|Style|style|퍼블리싱 수정|개발자, 디자이너|
+|Format|format|코드 정리|개발자|
 |Feature|feat|신규 기능 추가|개발자|
 |Refactor|refactor|성능 개선|개발자|
 |Chore|chore|빌드 설정, 라이브러리 업데이트 등|개발자
