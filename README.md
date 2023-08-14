@@ -1,4 +1,4 @@
-# BNN Git commit convention
+# BNN Git convention
 
 1. [Issue Types](#issue-types)
 2. [Issue Title Rules](#issue-title-rules)
