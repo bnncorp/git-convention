@@ -24,8 +24,8 @@
 ---
 
 ## Issue title rules
-- 이슈 생성 시 제목 접두사는 "[ [유형](#commit-type) ]"로 사용한다
-(e.g. [UI] 메인페이지 디자인 완료)
+- 이슈 생성 시 제목 접두사는 "1-1. 메인페이지"과 같이 페이지명(마일스톤명)으로 사용한다
+(e.g. 1-1. 메인페이지 / 배너 디자인 수정)
 - 유형은 [PascalCase](https://www.freecodecamp.org/news/snake-case-vs-camel-case-vs-pascal-case-vs-kebab-case-whats-the-difference/#pascal-case)로 작성한다.
 단, 유형이 두 자리인 경우에는 전부 대문자로 작성한다
 - 단순 수정이나 공개적으로 이슈를 등록할 필요가 없는 건은 **커밋**으로 바로 등록한다
