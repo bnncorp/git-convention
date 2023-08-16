@@ -24,28 +24,34 @@
 ---
 
 ## Issue title rules
-1. 이슈 생성 시 제목 접두사는 "[ [유형](#commit-type) ]"로 사용한다
+- 이슈 생성 시 제목 접두사는 "[ [유형](#commit-type) ]"로 사용한다
 (e.g. [UI] 메인페이지 디자인 완료)
-2. 유형은 [PascalCase](https://www.freecodecamp.org/news/snake-case-vs-camel-case-vs-pascal-case-vs-kebab-case-whats-the-difference/#pascal-case)로 작성한다.
+- 유형은 [PascalCase](https://www.freecodecamp.org/news/snake-case-vs-camel-case-vs-pascal-case-vs-kebab-case-whats-the-difference/#pascal-case)로 작성한다.
 단, 유형이 두 자리인 경우에는 전부 대문자로 작성한다
-3. 단순 수정이나 공개적으로 이슈를 등록할 필요가 없는 건은 **커밋**으로 바로 등록한다
+- 단순 수정이나 공개적으로 이슈를 등록할 필요가 없는 건은 **커밋**으로 바로 등록한다
 
 ---
 
 ## Commit message rules
-1. Bug, Hotfix 유형의 경우에는 접두사로 `Fix`를 사용하여 이슈를 닫고, 이외의 경우는 `Close`를 사용하여 닫는다
-2. 이슈를 닫지 않고 참조하는 경우는 `Ref`를 사용하여 참조한다
-3. 여러 개의 이슈를 처리하는 경우에는 아래와 같이 처리한다
+- Bug, Hotfix 유형의 경우에는 접두사로 `Fix`를 사용하여 이슈를 닫고, 이외의 경우는 `Close`를 사용하여 닫는다
+- 이슈를 닫지 않고 참조하는 경우는 `Ref`를 사용하여 참조한다
+- 여러 개의 이슈를 처리하는 경우에는 아래와 같이 작성한다
 ```bash
 git commit -m "Close #1, close #2, fix #3, ref #4"
 ```
-4. 이슈에 등록되지 않은 커밋의 메시지 접두사는 "[커밋 약어](#commit-shortening): "로 사용한다
+- 이슈에 등록되지 않은 커밋의 메시지 접두사는 "[커밋 약어](#commit-shortening): "로 사용한다
 (e.g. feat: 오타 수정)
+- 참조와 메시지 전달 모두 복합적으로 처리해야하는 경우 아래와 같이 작성한다
+```bash
+git commit -m "Ref #5
+hotfix: 심각한 문제 해결
+bug: 심각한 문제와 더불어 함께 처리 된 기능"
+```
 
 ---
 
 ## Branch rules
-1. 브랜치는 기능단위로 생성 후 `dev` 브랜치에 `rebase and merge`한다
+- 브랜치는 기능단위로 생성 후 `dev` 브랜치에 `rebase and merge`한다
 ```bash
 git switch feat/31
 git rebase dev
@@ -53,5 +59,5 @@ git rebase dev
 git switch dev
 git merge feat/31
 ```
-2. 브랜치명은 `커밋 약어/이슈번호` 또는 `커밋 약어/기능 간략 설명`으로 생성한다
+- 브랜치명은 `커밋 약어/이슈번호` 또는 `커밋 약어/기능 간략 설명`으로 생성한다
 (e.g. feat/31 or hotfix/build-error)
