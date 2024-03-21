@@ -12,6 +12,7 @@
 |---|-------|---|------|
 |UI|ui|디자인 완료|디자이너|
 |Style|style|퍼블리싱 수정|개발자, 디자이너|
+|Types|types|인터페이스, 타입 추가/변경/삭제|개발자|
 |Format|format|코드 정리|개발자|
 |Feature|feat|신규 기능 추가|개발자|
 |Refactor|refactor|성능 개선|개발자|
