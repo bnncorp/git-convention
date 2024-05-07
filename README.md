@@ -15,7 +15,7 @@
 |Types|types|인터페이스, 타입 추가/변경/삭제|개발자|
 |Format|format|코드 정리|개발자|
 |Feature|feat|신규 기능 추가|개발자|
-|Refactor|refactor|성능 개선|개발자|
+|Refactor|refact|성능 개선|개발자|
 |Chore|chore|빌드 설정, 라이브러리 업데이트 등|개발자
 |Bug|bug|문제 발생|All|
 |Hotfix|hotfix|문제 발생(긴급)|All|
